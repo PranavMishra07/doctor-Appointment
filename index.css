@@ -179,7 +179,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 43px;
-    font-family: "Poppins", serif;
+
     font-weight: 700;
 }
 
@@ -317,6 +317,45 @@ body {
 }
 
 /* --------------------===========SLIDER------------------------------------------ */
+/*----------------------------------------- ABOUT US-------------------------------------- */
+.about-us {
+    width: 100%;
+    /* max-width: 1024px; */
+    display: flex;
+    align-items: center !important;
+    margin-top: -6px;
+    margin-bottom: 30px;
+}
+
+.about-us span {
+    color: #19ce67;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: "Rubik", serif;
+}
+
+.about-us h2 {
+    font-size: 40px;
+    font-family: "Poppins", serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.features {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.features,
+.row {
+    display: flex;
+    width: 50%;
+}
+
+/*----------------------------------------- ABOUT US-------------------------------------- */
 /* ---------=====================Responsive Navbar--------------================================- */
 
 /* ---------=====================Responsive Navbar--------------================================- */
