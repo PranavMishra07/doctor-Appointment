@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Eater&family=Gilda+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Snippet&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
@@ -46,7 +48,7 @@
             <div class="swiper-slide" id="swipe1">
                 <div class="slide1">
                     <span>Welcome To Medic</span>
-                    <h1 class="hover-underline">Specializing Cosmetic <br>Medical Surgery</h1>
+                    <h1 class="hover-underline" data-aos="fade-right">Specializing Cosmetic <br>Medical Surgery</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil <br> architecto laborum eaque!
                         Deserunt maxime, minus quas molestiae <br> reiciendis.</p>
                     <div class="slidebtn">
@@ -74,55 +76,123 @@
     <div class="swiper-pagination"></div>
     </div>
     <div class="about-us">
-        <div class="about">
+        <div class="about" data-aos="fade-up" data-aos-duration="1200">
             <span>About Us</span>
             <h2>Tackle The Challenge Of <br> Delivering Health Care</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi consectetur
                 adipiscing elit incididunt labore dolore magna</p>
             <ul>
-                <li> <i class='bx bxs-check-circle'></i>Consultations Wif Specialized Pediatricians</li>
-                <li>
-                    A Wide Range Of Laboratory Studies
+                <li><span> <i class="fa-solid fa-circle-check"></i> </span>
+                    <h5>Consultations Wif Specialized Pediatricians</h5>
                 </li>
                 <li>
-                    Ultrasound Examination
+                    <span> <i class="fa-solid fa-circle-check"></i> </span>
+                    <h5>A Wide Range Of Laboratory Studies</h5>
                 </li>
                 <li>
-                    ECG, Echocardiography
+                    <span> <i class="fa-solid fa-circle-check"></i> </span>
+                    <h5> Ultrasound Examination</h5>
+                </li>
+                <li>
+                    <span> <i class="fa-solid fa-circle-check"></i> </span>
+                    <h5> ECG, Echocardiography</h5>
                 </li>
             </ul>
-            <a href=""><button>More About Us</button></a>
+            <a href="">
+                <div class="slidebtn"><button>More About Us</button></div>
+            </a>
         </div>
         <div class="features">
-            <div class="row">
-                <div class="col">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <h3>Skilled Doctor</h3>
+            <div class=" row row1">
+                <div class="col col1" data-aos="fade-up" data-aos-duration="1400">
+                    <i class="fa-solid fa-user-doctor animate__animated animate__flipInY"></i>
+                    <h3 class="animate__animated animate__zoomInDown">Skilled Doctor</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     <a href="">Read More</a>
                 </div>
-                <div class="col">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <h3>Skilled Doctor</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <a href="">Read More</a>
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <h3>Skilled Doctor</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <a href="">Read More</a>
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <h3>Skilled Doctor</h3>
+                <div class="col col2" data-aos="fade-up" data-aos-duration="1400">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3 class="animate__animated animate__zoomInDown">Quality Services</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     <a href="">Read More</a>
                 </div>
             </div>
+            <div class="row row2">
+                <div class="col col1 " data-aos="fade-up" data-aos-duration="1400">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                    <h3 class="animate__animated animate__zoomInDown">Positive Reviews</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="col col2" data-aos="fade-up" data-aos-duration="1400">
+                    <i class="fa-solid fa-briefcase-medical"></i>
+                    <h3 class="animate__animated animate__zoomInDown">Latest Equipment</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+
         </div>
     </div>
+    <div class="footer area">
+        <div class="f f1">
+            <a href="">
+                <img src="image/logo.png" alt="">
+            </a>
+            <p>Lorem ipsum dolor, sit amet <br>earum consectetur adipisicing <br>elit. Cupiditate rerum quidem
+                <br>fugiat sapiente!
+                Iusto quae <br> perspiciatis amet earum <br> consectetur
+            </p>
+            <div class="social">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ff1">
+            <h3>Departments</h3>
+            <ul>
+                <li><a href="">Medicine</a></li>
+                <li><a href="">Neurology</a></li>
+                <li><a href="">Eye Care</a></li>
+                <li><a href="">Cardiology</a></li>
+                <li><a href="">Dental Care</a></li>
+                <li><a href="">Pulmonary</a></li>
+            </ul>
+        </div>
+        <div class="ff1">
+            <h3>Opening Hours</h3>
+            <ul>
+                <li><span>Mon-Tue:</span><span>6:00AM-10:00PM</span></li>
+                <li><span>Wed-Thu:</span><span>6:00AM-10:00PM</span></li>
+                <li><span>Fri-sat:</span><span>6:00AM-4:00PM</span></li>
+                <li><span>Sun:</span><span>Closed</span></li>
+            </ul>
+        </div>
+        <div class="ff1">
+            <h3> Get In Touch</h3>
+            <ul>
+                <li><i class="fa-solid fa-phone-volume"></i><span>Contact</span><a href="">+91-555-999-5460</a></li>
+                <li><i class="fa-solid fa-envelope"></i><span>Email:</span><a href="">hello@welocme.com</a></li>
+                <li><i class="fa-solid fa-location-dot"></i><span>Address:</span>124 ,Indore Road,Bhopal</li>
+            </ul>
+        </div>
+    </div>
+    <div class="feet">
+        <p>Copyright &copy All rights reserved | This template is made with <i class="fa-solid fa-heart"></i>
+        </p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            { duration: 2000, }
+        );
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -139,7 +209,6 @@
             },
         });
     </script>
-
 </body>
 
 </html>
