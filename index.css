@@ -477,11 +477,29 @@ p {
     padding-top: 100px;
     padding-bottom: 70px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     gap: 50px;
     background-color: #122738;
     color: white;
     display: flex;
+}
+
+.footer area {
+    align-items: center !important;
+}
+
+.footer i {
+    color: #19ce67;
+    font-size: 20px;
+}
+
+.footer .f1 i {
+    font-size: 20px;
+    color: #25302a;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .footer .f1 a {
@@ -489,7 +507,7 @@ p {
 }
 
 .footer img {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .footer p {
@@ -498,7 +516,13 @@ p {
 }
 
 .footer .f {
-    margin-bottom: 30px;
+    /* margin-bottom: 0px; */
+    padding-right: 50px;
+
+}
+
+.footer ul {
+    list-style: none;
 }
 
 .footer .social {
@@ -514,11 +538,62 @@ p {
 
 }
 
+.footer .f h3 {
+    padding-bottom: 15px;
+    font-size: 22px;
+    color: #19ce67;
+}
 
+.footer .f li {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
 
+.footer .f li a {
+    color: #ffffff;
+}
 
+.footer .f3 li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #19ce67;
+}
+
+.footer .f3 li .f3span {
+    padding-right: 15px;
+}
+
+.footer .f3 li .right {
+    float: right;
+}
+
+.footer .f4 ul li i {
+    padding-right: 15px;
+}
+
+.footer .f4 ul li {
+    padding-bottom: 15px;
+}
+
+.footer .f4 ul li span {
+    font-weight: bold;
+}
+
+.footer .f4 ul li a {
+    padding-left: 15px;
+}
+
+.feet {
+    background-color: #070d1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
 
 /* ---------------------------------------FOOTER------------------------------------------ */
 /* ---------=====================Responsive Navbar--------------================================- */
+@media screen (min-width="700px") {}
 
 /* ---------=====================Responsive Navbar--------------================================- */
