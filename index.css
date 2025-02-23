@@ -597,3 +597,92 @@ p {
 @media screen (min-width="700px") {}
 
 /* ---------=====================Responsive Navbar--------------================================- */
+
+
+
+/* -----------------------------------------------==========APPOINTMENT PAGE==========-------------------------------------------- */
+
+
+
+.appointment {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.appointment .form {
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.appointment .ad {
+    background-image: url(image/appointment-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+.appointment .appoint {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.appoint h2 {
+    font-size: 30px;
+}
+
+.appoint .put {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* flex-wrap: wrap; */
+    /* width: 50%; */
+}
+
+.appoint .put .in1 input {
+    height: 50px;
+    width: 100%;
+    color: #121521;
+    border: 1px solid #e8e8e8;
+    background-color: #f2f9fc;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.appoint .put .in1 select {
+    height: 50px;
+    width: 100%;
+    color: #121521;
+    border: 1px solid #e8e8e8;
+    background-color: #f2f9fc;
+    border-radius: 0;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 28px;
+}
+
+.appoint .put .in1 i {
+    position: absolute;
+    /* text-align: center; */
+}
+
+.appoint span {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.appoint h2 {
+    font-size: 40px;
+    font-family: "Poppins", serif;
+
+}
+
+/* -----------------------------------------------==========APPOINTMENT PAGE==========-------------------------------------------- */
