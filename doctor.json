@@ -1,23 +1,13 @@
 {
   "Doctor": [
-    {},
     {
-      "id": "3e97",
+      "id": "b5bb",
       "aname": "Pranav Mishra",
       "aemail": "pranav072003@gmail.com",
       "acontact": "09399093024",
-      "aservice": "surgery",
+      "aservice": "x-ray",
       "adate": "2025-03-08",
-      "atime": "01.00 PM - 03.00 PM"
-    },
-    {
-      "id": "5dab",
-      "aname": "Pranav Mishra",
-      "aemail": "pranav072003@gmail.com",
-      "acontact": "09399093024",
-      "aservice": "nuclear-magnetic",
-      "adate": "2025-03-08",
-      "atime": "04.00 PM - 06.00 PM"
+      "atime": "10.00 AM - 11.00 AM"
     }
   ]
 }
