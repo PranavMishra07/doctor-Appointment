@@ -39,11 +39,11 @@ async function data() {
     <td>${e.aname}</td>
     <td>${e.aemail}</td>
     <td>${e.acontact}</td>
-    <td>${e.aservice}</td>
+    <td id="eservice " >${e.aservice}</td>
     <td>${e.adate}</td>
     <td>${e.atime}</td>
-    <td><button onclick="mydel('${e.id}')" >delete </button></td>
-    <td><button onclick="myedit('${e.id}')" >edit </button></td>
+    <td><button id="delbtn" onclick="mydel('${e.id}')" >delete </button></td>
+    <td><button id="edbtn" onclick="myedit('${e.id}')" >edit </button></td>
     </tr>
     `).join("")
     let a = document.querySelector("#display")
