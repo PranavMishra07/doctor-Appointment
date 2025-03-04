@@ -1,18 +1,42 @@
-function savedata() {
 
-    let email = document.querySelector("#email").value
-    let password = document.querySelector("#password").value
-    localStorage.setItem("email", email)
-    localStorage.setItem("password", password)
+// localStorage.setItem("logindata", JSON.stringify(logindata))
+// let admincheck = JSON.parse(localStorage.getItem("logindata"))
+// console.log(admincheck);
+function adminlogin() {
+    let admin_email = document.querySelector("#admin_email").value
+    let admin_password = document.querySelector("#admin_password").value
+    if (admin_email != "pranav072003@gmail.com") {
+        alert("EmIAL IS WERONF")
+        return false
+    }
+    if (admin_password != "pranav@123") {
+        alert("Data Not Found")
+        return false
+    }
 }
-function signin() {
-    let sign = {
-        semail: document.querySelector("#semail").value,
-        spassword: document.querySelector("#spassword").value
+function register() {
+    let registry = {
+        regemail: document.querySelector("#remail").value,
+        regpassword: document.querySelector("#rpassword").value
     }
 
-    localStorage.setItem("sign", JSON.stringify(sign))
+    localStorage.setItem("registry", JSON.stringify(registry))
+
 }
+let registerdata = JSON.parse(localStorage.getItem("registry"))
+console.log(registerdata)
+
+function pateintlogin() {
+    let pateintlogindata = {
+        loginemail: document.querySelector(".pemail").value,
+        loginpassword: document.querySelector(".ppassword").value
+    }
+    if (registerdata.regemail != pateintlogindata.loginemail || registerdata.regpassword != pateintlogindata.loginpassword) {
+        alert("User Not Found")
+        return false
+    }
+}
+
 function appoint() {
     let appointdata = {
         aname: document.querySelector("#name").value,
@@ -39,7 +63,7 @@ async function data() {
     <td>${e.aname}</td>
     <td>${e.aemail}</td>
     <td>${e.acontact}</td>
-    <td id="eservice " >${e.aservice}</td>
+    <td>${e.aservice}</td>
     <td>${e.adate}</td>
     <td>${e.atime}</td>
     <td><button id="delbtn" onclick="mydel('${e.id}')" >delete </button></td>
@@ -67,7 +91,7 @@ async function myedit(id) {
     let frm = `
     <input type="text" value="${fdata.id}" id="id1"  ><br><br>
     <input type="text" value="${fdata.aname}" id="name1"  ><br><br>
-    <input type="text"  value="${fdata.aemail}" id="age1" ><br><br>
+    <input type="text"  value="${fdata.aemail}" id="email" ><br><br>
     <input type="text"  value="${fdata.acontact}" id="contact1"><br><br>
     <input type="text" value="${fdata.aservice}" id="service1"  ><br><br>
     <input type="text" value="${fdata.adate}" id="date1"  ><br><br>
@@ -76,11 +100,12 @@ async function myedit(id) {
     `
     document.querySelector("#showfrm").innerHTML = frm
 }
+
 function finalupdate(id) {
     let final = {
         id: document.querySelector("#id1").value,
         name: document.querySelector("#name1").value,
-        age: document.querySelector("#age1").value,
+        email: document.querySelector("#email").value,
         contact: document.querySelector("#contact1").value,
         service: document.querySelector("#service1").value,
         date: document.querySelector("#date1").value,

@@ -52,14 +52,14 @@
             </div>
             <div class="log">
                 <h4>Sign in</h4>
-                <form action="" onsubmit="savedata()">
+                <form action="Database.html" onsubmit="return  adminlogin()">
                     <div class="email">
                         <label for="email">Your Email*</label>
-                        <input type="text" id="email">
+                        <input type="text" id="admin_email" required>
                     </div>
                     <div class="password">
                         <label for="password">Password*</label>
-                        <input type="text" id="password">
+                        <input type="text" id="admin_password" required>
                     </div>
                     <div class="check">
                         <div class="checkbox">
@@ -70,9 +70,11 @@
                             <a href="">Forget password ?</a>
                         </div>
                     </div>
+
                     <div class="sign">
-                        <button>sign in</button>
+                        <a href=""><button>sign in</button></a>
                     </div>
+
                 </form>
                 <div class="signup">
                     <p>Don't have an account ? </p>

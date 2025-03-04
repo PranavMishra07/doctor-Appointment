@@ -53,15 +53,15 @@
 
     <div class="logsin">
         <div class="login-box">
-            <form action="appointment.html">
+            <form action="appointment.html" onsubmit="return pateintlogin()">
                 <div class="login-header">
                     <header>Login</header>
                 </div>
                 <div class="input-b">
-                    <input type="text" class="remail" placeholder="Email" required>
+                    <input type="text" class="pemail" placeholder="Email" required>
                 </div>
                 <div class="input-b">
-                    <input type="password" class="rpassword" placeholder="Password" required>
+                    <input type="password" class="ppassword" placeholder="Password" required>
                 </div>
                 <div class="forgot">
                     <section>
@@ -73,7 +73,7 @@
                     </section>
                 </div>
                 <div class="input-submit">
-                    <button class="submit-btn" id="submit"></button>
+                    <button class="submit-btn"></button>
                     <label for="submit">sign in</label>
                 </div>
                 <div class="sign-up-link">
