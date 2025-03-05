@@ -1211,6 +1211,33 @@ a:hover {
 
 
 
+
+/* aos */
+
+/* [data-aos="example-anim3"] {
+    background: rgb(217, 155, 155);
+    transition-property: background;
+
+    &.aos-animate {
+        background: rgb(255, 255, 255);
+    }
+} */
+
+[data-aos="example-anim3"] {
+    transform: rotate(35deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+/* aos */
+
+
+
 /* ------------------------DATABASE ------------------------------------- */
 .database_body {
     display: flex;
