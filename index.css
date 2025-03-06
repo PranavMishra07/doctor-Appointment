@@ -647,18 +647,21 @@ body {
 
 
 /* ABOUT US RESPONSIVE */
+@media screen and (max-width: 600px) {
+    .about-us {
+        flex-direction: column;
+    }
 
-.about-us {
-    flex-direction: column;
+    .features {
+        flex-direction: column;
+    }
+
+    .row {
+        padding-left: 8%;
+    }
 }
 
-.features {
-    flex-direction: column;
-}
 
-.row {
-    padding-left: 8%;
-}
 
 /* ABOUT US RESPONSIVE */
 
@@ -802,10 +805,15 @@ body {
 @media screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
+        padding-left: 51px;
         /* flex-wrap: nowrap; */
         /* justify-content: center; */
         align-items: center;
         text-align: center;
+    }
+
+    .footer img {
+        height: 48px;
     }
 
     .f4 {
@@ -1166,7 +1174,39 @@ form {
     font-family: "Poppins", serif;
     font-weight: 700;
     color: #122738;
+    position: relative;
+    z-index: 1;
 }
+
+.sign button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #122738;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    border: none;
+    border-radius: 5px;
+}
+
+.sign button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.sign button:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+
+
+
 
 .signup {
     display: flex;
@@ -1180,7 +1220,18 @@ form {
     font-weight: 700;
 }
 
+@media screen and (max-width: 600px) {
+    .log h4 {
+        font-size: 28px;
+        padding-bottom: 30px;
+        font-family: "Poppins", serif;
+    }
+}
+
+
 /* ----------------------------ADMIN PAGE------------------------------ */
+/* -----------------------------------REGISTRATION PAGE------------------------------------------------ */
+
 .wrapped {
     background-color: #fff;
     padding: 50px 50px;
@@ -1270,6 +1321,25 @@ form {
     font-weight: 600;
 
 }
+
+@media screen and (max-width: 600px) {
+    .input-box .input-field input {}
+
+    .wrapped {
+        padding: 22px 11px;
+    }
+
+    .wrapper .input-box {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+}
+
+/* -----------------------------------REGISTRATION PAGE------------------------------------------------ */
 
 /* -----------------------loginpage---------------------------------------- */
 

@@ -71,15 +71,6 @@
       "service": "",
       "date": "",
       "time": "Select Time"
-    },
-    {
-      "id": "ae5d",
-      "name": "undefined",
-      "email": "undefined",
-      "contact": "undefined",
-      "service": "surgery",
-      "date": "",
-      "time": "Select Time"
     }
   ]
 }
