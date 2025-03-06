@@ -30,6 +30,11 @@
     <div class="header">
         <div class="navarea">
             <div class="logo"><img src="image/logo.png" alt=""></div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <div class="menu">
                 <ul>
                     <li><a href="index.html">|Home</a></li>
@@ -58,21 +63,21 @@
                 <form action="index.html" onsubmit="appoint()">
                     <div class="put">
                         <div class="in1">
-                            <input type="text" placeholder="Enter Your Name" id="name">
+                            <input type="text" placeholder="Enter Your Name" id="name" required>
                             <i class="fa-regular fa-circle-user"></i>
                         </div>
                         <div class="in1">
-                            <input placeholder="Enter Your Email" id="email">
+                            <input placeholder="Enter Your Email" id="email" required>
                             <i class="fa-regular fa-envelope"></i>
                         </div>
                     </div>
                     <div class="put">
                         <div class="in1">
-                            <input placeholder="Enter Your Phone" id="contact">
+                            <input placeholder="Enter Your Phone" id="contact" required>
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div class="in1">
-                            <select id="service">
+                            <select id="service" required>
                                 <option value="">Select Service</option>
                                 <option value="surgery">Surgery & Radiology</option>
                                 <option value="neurology">Neurology</option>
@@ -88,11 +93,11 @@
                     </div>
                     <div class="put">
                         <div class="in1">
-                            <input type="date" id="date">
+                            <input type="date" id="date" required>
                             <i class="fa-solid fa-calendar-days"></i>
                         </div>
                         <div class="in1">
-                            <select id="time">
+                            <select id="time" required>
                                 <option>Select Time</option>
                                 <option>09.00 AM - 10.00 AM</option>
                                 <option>10.00 AM - 11.00 AM</option>
@@ -113,69 +118,13 @@
 
                 </form>
             </div>
-            <div class="ad">
-                <img src="image/appointment-img.jpg" alt="Appointment Image">
+            <div class="add">
+                <img src="image/appointment-img.jpg" alt="">
             </div>
         </div>
     </div>
 
-    <!-- <div class="appointment">
-        <div class="appoint">
-            <div class="form">
-                <span>Make An Appointment</span>
-                <h2>We Are Here For You</h2>
-                <form action="">
-                    <div class="put">
-                        <div class="in1">
-                            <input type="text" placeholder="Enter Your Name"><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                        <div class="in1">
-                            <input type="text" placeholder="Enter Your Email"><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                    </div>
-                    <div class="put">
-                        <div class="in1">
-                            <input type="text" placeholder="Enter Your Phone"><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                        <div class="in1">
-                            <select name="" id="select">
-                                <option value="">Select Service</option>
-                                <option value="">Surgery & Radiology</option>
-                                <option value="">Neurology</option>
-                                <option value="">Angiography</option>
-                                <option value="">Children Care</option>
-                                <option value="">Orthopedics</option>
-                                <option value="">Nuclear Magnetic</option>
-                                <option value="">Eye Treatment</option>
-                                <option value="">X-Ray</option>
-                            </select><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                    </div>
-                    <div class="put">
-                        <div class="in1">
-                            <input type="text" placeholder="Datesdfvsdfsdf"><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                        <div class="in1">
-                            <select name="" id="select">
-                                <option value="">Select Time</option>
-                                <option value="">09.00 AM To 10.00 AM</option>
-                                <option value="">10.00 AM To 11.00 AM</option>
-                                <option value="">11.00 AM To 12.00 PM</option>
-                                <option value="">12.00 PM To 01.00 PM</option>
-                                <option value="">01.00 PM To 03.00 PM</option>
-                                <option value="">04.00 PM To 06.00 PM</option>
-                                <option value="">07.00 PM To 10.00 PM</option>
-                            </select><i class="fa-regular fa-circle-user"></i>
-                        </div>
-                    </div>
-                    <div class="in1">
-                        <input type="text" id=""><i class="fa-regular fa-circle-user"></i>
-                    </div>
-                </form>
-            </div>
-            <div class="ad"><img src="image/appointment-img.jpg" alt=""></div>
-        </div>
-    </div> -->
+
 
 
     <!-- Footer -->
@@ -233,6 +182,8 @@
         </p>
     </div>
     <script src="doctor.js"></script>
+    <script src="Database.js"></script>
+
 </body>
 
 </html>

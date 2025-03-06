@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+/* -------------------------------NAVBAR CSS-------------------------------------------- */
+
 /* -------------------------------NAVBAR-------------------------------------------- */
+/* .header {
+    width: 100%;
+} */
 .header {
     width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navarea {
@@ -15,18 +26,19 @@
     font-weight: 550;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: whitesmoke;
+    padding: 10px 20px;
 }
 
 .logo {
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-    background-color: #19ce67;
-    /* padding: 10px 90px;
-    padding-right: 50px; */
     padding-right: 50px;
     padding-left: 90px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #19ce67;
+
 }
 
 .logo img {
@@ -35,15 +47,14 @@
 
 .menu {
     display: flex;
-    /* margin-left: 50px; */
-    padding-left: 50px;
     align-items: center;
 }
 
 .menu a {
     color: black;
-
 }
+
+
 
 html,
 body {
@@ -51,69 +62,47 @@ body {
     width: 100%;
 }
 
-/* .menu .admin:hover {
-    background-color: #19ce67;
-    color: #ffffff;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-} */
+/* Hide hamburger menu on large screens */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
+/* NAV MENU */
 .menu ul {
-    text-align: center;
     display: flex;
     list-style: none;
     font-size: 20px;
     gap: 30px;
 }
 
+.menu ul li {
+    cursor: pointer;
+}
+
 .menu ul i {
     font-size: 15px;
-    text-align: center;
     padding-left: 5px;
 }
 
-.get {
-    /* margin-left: 100px; */
-    padding-left: 100px;
-    display: flex;
-    text-align: center;
-}
-
+/* Button */
 .get button {
-    height: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    font-weight: 400px;
+    font-size: 18px;
+    font-weight: 550;
+
+    padding: 10px 15px;
     background-color: #19ce67;
     border: none;
     border-radius: 5px;
-    font-weight: 550;
     color: white;
-    /* z-index: 1;
-    position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    color: white;
-    padding: 0.5em 1em; */
-    outline: none;
-    border: none;
+    cursor: pointer;
     z-index: 1;
     position: relative;
 }
 
-/* .get button {
-    z-index: 1;
-    position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    color: white;
-    padding: 0.5em 1em;
-    outline: none;
-    border: none;
-    background-color: hsl(236, 32%, 26%); 
-} */
 
+/* button hover */
 .get button::before {
     content: '';
     z-index: -1;
@@ -122,7 +111,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #122738;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
@@ -140,24 +129,24 @@ body {
 }
 
 
+
+
+
+
+/* ADMIN SECTION */
 .admin {
+    position: relative;
     display: flex;
-    margin-left: 30px;
-    /* justify-content: center;  */
-    padding: 2px 5px 2px 5px;
-    text-align: center;
-    font-size: 30px;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .admin i {
-
-    margin-top: 4px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
-.admin {
-    position: relative;
-}
 
 .admin::before,
 .admin::after {
@@ -185,7 +174,63 @@ body {
     transform: scaleY(1);
 }
 
-/* -------------------------------NAVBAR-------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE NAVBAR */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: whitesmoke;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------===========SLIDER------------------------------------------ */
 html,
@@ -297,7 +342,7 @@ body {
     border: none;
     border-radius: 5px;
     font-weight: 550;
-    color: white;
+    color: #FFFFFF;
     outline: none;
     border: none;
     z-index: 1;
@@ -312,7 +357,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #122738;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
@@ -648,6 +693,26 @@ body {
     font-size: 18px;
 }
 
+
+
+/* Footer Responsive */
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f4 {
+        display: inline;
+    }
+}
+
+/* Footer Responsive */
+
 /* ---------------------------------------FOOTER------------------------------------------ */
 /* ---------=====================Responsive Navbar--------------================================- */
 /* @media screen (min-width="700px") {} */
@@ -663,8 +728,9 @@ body {
 .appointment {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: linear-gradient(187deg, rgb(255 217 250) 46.5%, rgb(129 25 115) 98.5%, rgb(151 115 115) 124.3%);
-    background-color: white;
+    /* background-image: linear-gradient(187deg, rgb(255 217 250) 46.5%, rgb(129 25 115) 98.5%, rgb(151 115 115) 124.3%); */
+    background-color: #FFFFFF;
+    background: #000000, opacity 0%;
 }
 
 .appointment .form {
@@ -672,13 +738,16 @@ body {
     padding: 30px;
 }
 
-.appointment .ad {
+.appointment .add {
     background-image: url(image/appointment-img.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 100%;
-    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    /* width: 100%; */
+    /* box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.05);
+
 
 }
 
@@ -687,6 +756,7 @@ body {
     justify-content: center;
     gap: 50px;
     text-align: center;
+    background-color: #000000, opacity 0%;
 }
 
 .appoint h2 {
@@ -812,7 +882,7 @@ body {
     border: none;
     border-radius: 5px;
     font-weight: 550;
-    color: white;
+    color: #FFFFFF;
     /* z-index: 1;
     position: relative;
     font-size: inherit;
@@ -845,7 +915,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #122738;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
@@ -867,7 +937,7 @@ body {
 /* ----------------------------ADMIN PAGE------------------------------ */
 
 .adminpage {
-    background-color: #1bf6ff82;
+    background-color: #F6F7F8;
     padding-bottom: 70px;
     padding-top: 70px;
     display: flex;
@@ -882,8 +952,9 @@ body {
 
 .adminlogin {
     padding: 20px;
-
-    box-shadow: 0px 0px 18px 7px #00b6ff38
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 18px 7px rgba(60, 72, 88, 0.15);
+    /* box-shadow: rgba(60, 72, 88, 0.15) 0px 0px 3px 0px; */
 }
 
 .adminlogin .image {
