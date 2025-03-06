@@ -703,7 +703,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
-    .footer area {
+    .footer {
         flex-direction: column;
         flex-wrap: nowrap;
         /* justify-content: center; */
