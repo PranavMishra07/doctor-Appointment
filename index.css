@@ -703,7 +703,7 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .f4 {
