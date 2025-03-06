@@ -460,9 +460,16 @@ body {
 /* SLIDER RESPONSIVE */
 
 @media screen and (max-width: 600px) {
-    #swiper1 {
+    #swipe1 {
         background-image: none;
+        padding-left: 10%;
     }
+
+    #swipe2 {
+        background-image: none;
+        padding-left: 10%;
+    }
+
 }
 
 
@@ -635,6 +642,24 @@ body {
 /* p {
     line-height: 1.8;
 } */
+
+
+/* ABOUT US RESPONSIVE */
+
+.about-us {
+    flex-direction: column;
+}
+
+/* ABOUT US RESPONSIVE */
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------------- ABOUT US-------------------------------------- */
 /* ---------------------------------------FOOTER------------------------------------------ */
