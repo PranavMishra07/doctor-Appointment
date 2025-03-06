@@ -197,6 +197,10 @@ body {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    .logo img {
+        height: 30px;
+    }
+
     .menu.active {
         display: flex;
     }
@@ -699,11 +703,12 @@ body {
 
 
 @media screen and (max-width: 600px) {
-    .footer {
+    .footer area {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         /* align-items: center; */
+        text-align: center;
     }
 
     .f4 {
