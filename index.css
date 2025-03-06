@@ -461,11 +461,13 @@ body {
 
 @media screen and (max-width: 600px) {
     #swipe1 {
+        background-color: #fff;
         background-image: none;
         padding-left: 10%;
     }
 
     #swipe2 {
+        background-color: #fff;
         background-image: none;
         padding-left: 10%;
     }
@@ -648,6 +650,14 @@ body {
 
 .about-us {
     flex-direction: column;
+}
+
+.features {
+    flex-direction: column;
+}
+
+.row {
+    padding-left: 8%;
 }
 
 /* ABOUT US RESPONSIVE */
