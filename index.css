@@ -296,10 +296,6 @@ body {
     padding-left: 100px;
     background-position: center;
 
-
-
-
-    background-attachment: fixed;
 }
 
 #swipe1 .slide1 span {
@@ -415,6 +411,13 @@ body {
     object-fit: cover;
     padding-top: 200px;
     padding-left: 100px;
+    /* text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-position: center;
 }
 
 #swipe2 .slide1 span {
@@ -450,6 +453,35 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+
+/* SLIDER RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    #swiper1 {
+        background-image: none;
+    }
+}
+
+
+
+/* SLIDER RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------===========SLIDER------------------------------------------ */
 /*----------------------------------------- ABOUT US-------------------------------------- */
