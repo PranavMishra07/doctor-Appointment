@@ -706,8 +706,8 @@ body {
     .footer area {
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
-        /* align-items: center; */
+        /* justify-content: center; */
+        align-items: center;
         text-align: center;
     }
 
