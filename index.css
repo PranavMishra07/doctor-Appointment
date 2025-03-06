@@ -69,6 +69,9 @@ body {
     cursor: pointer;
 }
 
+
+
+
 /* NAV MENU */
 .menu ul {
     display: flex;
@@ -197,12 +200,32 @@ body {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    .admin {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        padding-right: 25px;
+        padding-left: 9px;
+        padding-top: 7px;
+        padding-bottom: 4px;
+        background-color: #32004d;
+        clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+
+    }
+
     .logo img {
         height: 30px;
     }
 
     .menu.active {
         display: flex;
+        background-color: #000000c2;
+        color: #ffff;
+    }
+
+    .menu.active a {
+        color: #dfff85e6;
     }
 
     .menu ul {
@@ -213,6 +236,7 @@ body {
 
     .hamburger {
         display: block;
+        color: #32004d;
     }
 }
 
@@ -705,7 +729,7 @@ body {
 @media screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
         /* justify-content: center; */
         align-items: center;
         text-align: center;
