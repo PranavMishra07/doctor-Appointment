@@ -1034,6 +1034,19 @@ body {
     transform: scaleX(1);
 }
 
+
+@media screen and (max-width: 600px) {
+    .appoint {
+        flex-direction: column;
+
+    }
+
+    .add {
+        display: none;
+    }
+}
+
+
 /* -----------------------------------------------==========APPOINTMENT PAGE==========-------------------------------------------- */
 
 /* ----------------------------ADMIN PAGE------------------------------ */
