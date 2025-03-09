@@ -7,6 +7,7 @@ function appoint() {
         adate: document.querySelector("#date").value,
         atime: document.querySelector("#time").value,
     }
+    localStorage.setItem("apoointdata", JSON.stringify(appointdata))
     fetch("http://localhost:3000/Doctor", {
         method: "POST",
         headers: {
@@ -14,7 +15,11 @@ function appoint() {
         },
         body: JSON.stringify(appointdata)
     }).then(r => alert("Appoointment Submitted"))
+
+
+
 }
+
 async function data() {
     let data = await fetch("http://localhost:3000/Doctor")
     let fdata = await data.json()
@@ -24,7 +29,7 @@ async function data() {
     <td>${e.aname}</td>
     <td>${e.aemail}</td>
     <td>${e.acontact}</td>
-    <td>${e.aservice}</td>
+    <td id="aservice" >${e.aservice}</td>
     <td>${e.adate}</td>
     <td>${e.atime}</td>
     <td><button id="delbtn" onclick="mydel('${e.id}')" >delete </button></td>
@@ -53,7 +58,7 @@ async function myedit(id) {
  
     <input type="text" value="${fdata.id}" id="id1"  ><br><br>
     <input type="text" value="${fdata.aname}" id="name1"  ><br><br>
-    <input type="text"  value="${fdata.aemail}" id="email" ><br><br>
+    <input type="text"  value="${fdata.aemail}" id="email1" ><br><br>
     <input type="text"  value="${fdata.acontact}" id="contact1"><br><br>
     <select  value="${fdata.aservice}" id="service1" >
       <option value="">Select Service</option>
@@ -89,12 +94,12 @@ async function myedit(id) {
 function finalupdate(id) {
     let final = {
         id: document.querySelector("#id1").value,
-        name: document.querySelector("#name1").value,
-        email: document.querySelector("#email").value,
-        contact: document.querySelector("#contact1").value,
-        service: document.querySelector("#service1").value,
-        date: document.querySelector("#date1").value,
-        time: document.querySelector("#time1").value,
+        aname: document.querySelector("#name1").value,
+        aemail: document.querySelector("#email1").value,
+        acontact: document.querySelector("#contact1").value,
+        aservice: document.querySelector("#service1").value,
+        adate: document.querySelector("#date1").value,
+        atime: document.querySelector("#time1").value,
     }
     fetch(`http://localhost:3000/Doctor/${id}`, {
         method: "PUT",
@@ -104,3 +109,24 @@ function finalupdate(id) {
         body: JSON.stringify(final)
     }).then(r => alert("Data updated"))
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
